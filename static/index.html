@@ -28,6 +28,7 @@
 </head>
 <body class="min-h-screen p-8">
     <div class="max-w-4xl mx-auto">
+        <!-- Header and Introduction -->
         <div class="text-center mb-12">
             <h1 class="text-4xl font-bold text-gray-800 mb-4">Energy Consumption Forecast 🌍⚡</h1>
             <p class="text-lg text-gray-600">
@@ -35,6 +36,7 @@
             </p>
         </div>
 
+        <!-- Pre-trained Model Message -->
         <div class="card p-8 mb-8">
             <div class="bg-blue-50 border-l-4 border-blue-400 p-4 mb-6 rounded-lg">
                 <div class="flex items-start">
@@ -49,7 +51,7 @@
                             Download the sample dataset below, upload it, and see the results instantly!
                         </p>
                         <a
-                            href="https://raw.githubusercontent.com/bhavinmoriya/EnergyPredictionApp/refs/heads/main/Data/PJME_hourly.csv"
+                            href="https://raw.githubusercontent.com/your-repo/PJME_hourly.csv"
                             download="PJME_hourly.csv"
                             class="inline-block bg-yellow-500 hover:bg-yellow-600 text-white py-2 px-4 rounded-lg font-medium mt-2 transition"
                         >
@@ -59,6 +61,7 @@
                 </div>
             </div>
 
+            <!-- Dataset Preview -->
             <div class="overflow-x-auto mt-4 mb-6">
                 <p class="text-sm text-gray-600 mb-2">Preview of the dataset:</p>
                 <table class="min-w-full bg-white border border-gray-200 rounded-lg shadow-sm">
@@ -81,6 +84,7 @@
                 </table>
             </div>
 
+            <!-- How It Works -->
             <div class="mt-6">
                 <h3 class="text-lg font-semibold text-gray-700 mb-4">How It Works</h3>
                 <div class="flex flex-col sm:flex-row justify-around items-center gap-4">
@@ -111,6 +115,7 @@
                 </div>
             </div>
 
+            <!-- Upload Section -->
             <h2 class="text-2xl font-semibold text-gray-700 mt-8 mb-6">1. Upload Your Data</h2>
             <div class="flex flex-col sm:flex-row items-center gap-4">
                 <input
@@ -133,6 +138,7 @@
             </div>
         </div>
 
+        <!-- Results Section -->
         <div class="card p-8 mb-8">
             <h2 class="text-2xl font-semibold text-gray-700 mb-6">2. Generate Results</h2>
             <div class="flex flex-wrap gap-4 justify-center">
@@ -151,10 +157,48 @@
             </div>
         </div>
 
-        <div class="card p-8">
+        <!-- Results Output -->
+        <div class="card p-8 mb-8">
             <h2 class="text-2xl font-semibold text-gray-700 mb-6">3. Results</h2>
             <div id="results" class="min-h-[300px] bg-white rounded-lg p-6">
                 <p class="text-gray-500 text-center py-12">Your results will appear here.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="card p-8 mb-8">
+            <h2 class="text-2xl font-semibold text-gray-700 mb-6">❓ Frequently Asked Questions</h2>
+            <div class="space-y-4">
+                <div class="border-b border-gray-200 pb-4">
+                    <h3 class="text-lg font-medium text-gray-800 mb-2">Why can’t I train my own model?</h3>
+                    <p class="text-gray-600">
+                        Due to compute restrictions on this demo, we’ve pre-trained the model for you.
+                        For custom training, you can <a href="mailto:bhavinmoriya58@gmail.com" class="text-blue-600 hover:underline">contact us</a>
+                        or deploy the app on your own server!
+                    </p>
+                </div>
+                <div class="border-b border-gray-200 pb-4">
+                    <h3 class="text-lg font-medium text-gray-800 mb-2">Can I use my own dataset?</h3>
+                    <p class="text-gray-600">
+                        Currently, the app is optimized for the <strong>PJME_hourly.csv</strong> dataset.
+                        Stay tuned for updates, or reach out if you’d like to collaborate on adding support for custom datasets!
+                    </p>
+                </div>
+                <div class="border-b border-gray-200 pb-4">
+                    <h3 class="text-lg font-medium text-gray-800 mb-2">How accurate are the predictions?</h3>
+                    <p class="text-gray-600">
+                        The model achieves an RMSE of ~351 MW on the test set, which is typical for energy consumption forecasts.
+                        Accuracy depends on the quality and recency of the input data.
+                    </p>
+                </div>
+                <div class="pb-4">
+                    <h3 class="text-lg font-medium text-gray-800 mb-2">Can I deploy this app myself?</h3>
+                    <p class="text-gray-600">
+                        Yes! The app is open-source. Check out the
+                        <a href="https://github.com/bhavinmoriya/EnergyPredictionApp" class="text-blue-600 hover:underline">GitHub repository</a>
+                        for instructions on deploying it to platforms like Render, Heroku, or AWS.
+                    </p>
+                </div>
             </div>
         </div>
     </div>

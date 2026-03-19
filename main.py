@@ -28,7 +28,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 # Serve the HTML page
 @app.get("/")
 async def read_root():
-    return FileResponse("static/index_model.html")
+    return FileResponse("static/index.html")
 
 # Handle file upload
 @app.post("/upload")
